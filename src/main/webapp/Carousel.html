@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="boot/css/bootstrap.css">
+    <script src="boot/js/jquery-3.3.1.min.js"></script>
+    <script src="boot/js/bootstrap.js"></script>
+</head>
+<body>
+<!--轮播图-->
+
+<!--轮播图的标识                      轮播图的样式            轮播图的触发器-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!--定义图片的下标-->
+    <ol class="carousel-indicators">                         <!--默认选中第一张图片-->
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+
+    <!--定义轮播图片-->
+    <div class="carousel-inner">
+        <div class="item active">
+            <!--引入轮播图片-->
+            <img src="image/1.jpg"  width="100%" height="123"/>
+            <!--图片的描述-->
+            <div class="carousel-caption">
+                哈哈
+            </div>
+        </div>
+
+        <div class="item">
+            <!--引入轮播图片-->
+            <img src="image/2.jpg"  width="100%" height="123"/>
+            <!--图片的描述-->
+            <div class="carousel-caption">
+               heihei
+            </div>
+        </div>
+        <div class="item">
+            <!--引入轮播图片-->
+            <img src="image/timg.jpg"  width="100%" height="123"/>
+            <!--图片的描述-->
+            <div class="carousel-caption">
+                asdf
+            </div>
+        </div>
+    </div>
+
+    <!--添加左箭头的样式-->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <!--引入左箭头-->
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <!--添加右箭头的样式-->
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <!--引入右键头-->
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+
+
+
+
+</body>
+</html>

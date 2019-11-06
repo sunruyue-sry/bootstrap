@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="boot/css/bootstrap.css">
+    <script src="boot/js/jquery-3.3.1.min.js"></script>
+    <script src="boot/js/bootstrap.js"></script>
+
+
+</head>
+<body>
+
+<!--导航条-->
+<!--添加导航条的样式   navbar-static-top静止在顶部   navbar-fixed-top固定在顶部   navbar-fixed-top固定在底部-->
+<!-- navbar-inverse反色的导航条   navbar-default默认色 -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- 导航条的标题 -->
+        <div class="navbar-header">
+            <!--给导航条添加折叠样式-->        <!--调价折叠的触发器-->                     <!--指 定展示具体的内容-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" datatarget="#target">
+                <!--按钮上的横线-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--导航条的主题-->
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <!-- 展示的具体内容 -->
+        <div class="collapse navbar-collapse" id="target">
+            <!--具体的内容展示-->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li>
+     <!--表单-->
+                    <!--给导航条添加的表单     表单居左  -->
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <!--按钮-->
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </li>
+                <li>
+                    <!--文本-->
+                    <p class="navbar-text">Dergfd jasdf  mark in up</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+</body>
+</html>

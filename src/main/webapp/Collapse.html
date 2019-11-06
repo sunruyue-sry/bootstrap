@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="boot/css/bootstrap.css">
+    <script src="boot/js/jquery-3.3.1.min.js"></script>
+    <script src="boot/js/bootstrap.js"></script>
+</head>
+<body>
+<!--手风琴-->
+
+<!--添加面板组的样式   保证面板之间可以进行对应的交互-->
+<div class="panel-group" id="accordion">
+    <!--默认样式的面板-->
+    <div class="panel panel-default">
+        <!--面板头部-->
+        <div class="panel-heading">
+            <!--面板标题-->
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    用户列表
+                </a>
+            </h4>
+        </div>
+        <!--展示的具体内容-->
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                添加用户
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" id="headingTwo">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    类别列表
+                </a>
+            </h4>
+        </div>
+        <!--展示具体内容-->
+        <div id="collapseTwo" class="panel-collapse collapse in">
+            <div class="panel-body">
+                添加类别
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+</body>
+</html>

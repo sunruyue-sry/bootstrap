@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="boot/css/bootstrap.css">
+    <script src="boot/js/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<!--多选和单选框-->
+
+<!--复选框-->
+<div class="checkbox">
+    <label>
+        <input type="checkbox"/>唱跳
+    </label>
+</div>
+<div class="checbox">
+    <label>
+        <input type="checkbox"/>Rap
+    </label>
+</div>
+<div class="checkbox">
+    <label>
+        <input type="checkbox"/>篮球
+    </label>
+</div>
+
+
+<!--单选框-->
+<div class="radio">
+    <label>
+        <input type="radio" name="sex"/>男
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="sex"/>女
+    </label>
+</div>
+
+<!--内联单选和多选框-->
+<label class="checkbox-inline">
+    <input type="checkbox"/> 唱跳
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox"/> Rap
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox"/> 篮球
+</label>
+<label class="radio-inline">
+    <input type="radio" name="sex"/> 男
+</label>
+<label class="radio-inline">
+    <input type="radio" name="sex"/> 女
+</label>
+
+<!--下拉列表-->
+<!--<div class="col-md-1">
+    <select class="form-control">
+        <option>北京</option>
+        <option>上海</option>
+        <option>天津</option>
+    </select>
+</div>-->
+
+<!--禁用状态   disabled-->
+<!-- <fieldset disabled></fieldset> 禁用所有的控件  -->
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="input6" class="col-md-2 control-label">用户名：</label>
+        <div class="col-md-3">
+            <input type="text" name="username" class="form-control" id="input6"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="w1" class="col-md-2 control-label">密码：</label>
+        <div class="col-md-3">
+            <input type="password" name="password" class="form-control" id="w1"/>
+        </div>
+    </div>
+</form>
+
+<!--只读状态-->
+<!-- disabled设置的数据   不可以传输到后台-->
+<input type="text" class="form-control" value="小黑" disabled/>
+<!-- readonly设置的数据   可以传输到后台-->
+<input type="text" class="form-control" value="小白" readonly/>
+
+<!--校验状态  has-success-->
+<form>
+    <div class="form-group has-success">
+        <label for="a1">用户名：</label>
+        <input type="text" class="form-control " name="username" id="a1"/>
+    </div>
+    <div class="form-group has-error">
+        <label for="a2">密码：</label>
+        <input type="password" class="form-control " name="password" id="a2"/>
+    </div>
+</form>
+
+<!--控制尺寸 input-lg设置高度  .col-lg-*设置宽度   input-sm-->
+<form>
+    <div class="form-group has-success">
+        <label for="a3">用户名：</label>
+        <input type="text" class="form-control input-lg" name="username" id="a3"/>
+    </div>
+    <div class="form-group has-error">
+        <label for="a4">密码：</label>
+        <input type="password" class="form-control input-sm" name="password" id="a4"/>
+    </div>
+</form>
+
+<!--调整列(column)尺寸-->
+<div class="row">
+    <div class="col-md-2">
+        <input type="text" class="form-control" placeholder=".col-xs-2">
+    </div>
+    <div class="col-md-3">
+        <input type="text" class="form-control" placeholder=".col-xs-3">
+    </div>
+    <div class="col-md-4">
+        <input type="text" class="form-control" placeholder=".col-xs-4">
+    </div>
+</div>
+</body>
+</html>

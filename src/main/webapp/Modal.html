@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="boot/css/bootstrap.css">
+    <script src="boot/js/jquery-3.3.1.min.js"></script>
+    <script src="boot/js/bootstrap.js"></script>
+    <script type="application/javascript">
+        $(function () {
+           $("#Modal").modal({
+               show: true
+                //backdrop:false,  //关闭灯罩效果
+               // keyboard:false   //不能使用esc关掉模态框
+            });
+
+            //show 方法调用之后立即触发该事件
+            $('#Modal').on('show.bs.modal', function (e) {
+               alert("show方法调用之后立即触发该事件")
+            });
+            //此事件在模态框已经显示出来（并且同时在css过渡效果完成）之后被触发
+            $("#Modal").on('shown.bs.modal',function (e) {
+                alert("此事件在模态框已经显示出来（并且同时在css过渡效果完成）之后被触发");
+            });
+            //hide 方法 调用之后立即触发该事件
+            $("Modal").on('hide.bs.modal',function (e) {
+                alert("hide方法调用之后立即出触发该事件");
+            });
+            //此事件在模态框被隐藏（并且同时在css过度效果完成）之后被触发
+            $("#Modal").on('hidden.bs.modal',function (e) {
+               alert("此事件在模态框被隐藏（并且同时在css过度效果完成）之后被触发");
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+<!--模态框-->
+
+<!--modal添加模态框的样式 fade 决定模态框是否有动画效果-->
+<!--tabindex决定是否可以用键盘操作模态框-->
+<div id="Modal" class="modal fade" tabindex="-1">
+    <!--模态框的主题内容-->
+    <div class="modal-dialog">
+        <!--模态框的主题内容-->
+        <div class="modal-content">
+            <!--模态框的头部-->
+            <div class="modal-header">
+                <!--添加关闭的样式-->  <!--给模态框添加关闭的触发器-->
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                </button>
+                <!--模态框的标题-->
+                <h4 class="modal-title">Modal title</h4></div>
+            <!--模态框的身体-->
+            <div class="modal-body">
+                <p>One fine body&hellip;</p>
+            </div>
+            <!--模态框的脚-->
+            <div class="modal-footer">
+                <!--添加关闭模态框的触发器-->
+                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+</body>
+</html>
